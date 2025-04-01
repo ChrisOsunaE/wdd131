@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+      name="description"
+      content="WDD 131 - Page to show a place I wish to visit. Focus on responsive design and profieciency with HTML and CSS and JavaScritp.">
+    <meta
+      name="keywords"
+      content="WDD 131, Place where I wish to visit, Christopher Osuna"
+    >
+    <meta name="author" content="Christopher Osuna">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/place.js"></script>
+    <script src="scripts/getdates.js" defer></script>
+
+  <title>A place I wish to visit</title>
+</head>
+<body>
+  <header class="header">
+    <h1>New Zealand</h1>
+  </header>
+  <div class="hero">
+  <main>
+    
+    <section class="card card-left">
+      <div class="card-header">
+        <h2>Data</h2>
+      </div>
+      <div class="data-grid">
+        <div class="data-item">
+          <span class="data-label">Area:</span>
+          <span class="data-value">263,310 km²</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Population:</span>
+          <span class="data-value">5,478,400</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Capital:</span>
+          <span class="data-value">Wellington</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Languages:</span>
+          <span class="data-value">English, Māori, NZ Sign Lenguage</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Currency:</span>
+          <span class="data-value">New Zealand dollar</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Time Zone:</span>
+          <span class="data-value">UTC+12</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Calling Code:</span>
+          <span class="data-value">+64</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Internet TLD:</span>
+          <span class="data-value">.nz</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="card card-right">
+      <div class="card-header">
+        <h2>Weather</h2>
+        <span>🌥️</span>
+      </div>
+      <div class="data-grid">
+        <div class="data-item">
+          <span class="data-label">Temperature:</span>
+          <span class="data-value">20°C</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Conditions:</span>
+          <span class="data-value">Partly cloudy</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Wind:</span>
+          <span class="data-value">11 km/h</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Wind Chill:</span>
+          <span class="data-value">18°C</span>
+        </div>
+    </section>
+  </main>
+</div>
+  <footer>
+    <p>&copy;<span id="currentyear"></span> 🤖 Christopher Osuna, 🇲🇽 México</p>
+    <p>Last modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

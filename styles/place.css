@@ -1,0 +1,160 @@
+:root{
+  --color-blue: #012169;
+  --color-white: #FFFFF2;
+  --color-gray: #39373d;
+  --color-red: rgb(200, 17, 47)
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.plus-jakarta-sans-font {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+main {
+  flex: 1;
+  margin: 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+  text-align: center;
+  padding: 2rem 0;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+p {
+  font-family: plus-jakarta-sans-font;
+  margin: 0 0 2rem 0;
+}
+
+a {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+.header{
+  text-align: center;
+  font-size: 2.5rem;
+  background-color: var(--color-blue);
+  color: var(--color-red);
+}
+
+.hero{
+  background-image: url('/images/newZealand.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 85vh;
+  position: relative;
+  z-index: 1;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.hero {
+  transition: all 0.3s ease;
+}
+
+.card {
+  background-color: rgba(231, 220, 222, 0.7);
+  box-shadow: 0 0 2rem rgba(200, 17, 47, 0.3);
+  padding: 2rem;
+  max-width: 400px;
+  position: relative;
+}
+
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: var(--color-blue);
+  width: 100%;
+  padding: 1rem 2rem;
+  margin: 0 -3rem;
+  color: var(--color-white);
+
+}
+.data-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr;;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.data-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.data-item {
+  display: contents; 
+}
+
+.data-label {
+  font-weight: 600;
+  text-align: right;
+}
+
+.data-value {
+  text-align: left;
+  color: var(--color-gray);
+}
+
+.card-left{
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+.card-right{
+  align-self: flex-end;
+  margin-left: auto;
+  margin-top: -10%;
+}
