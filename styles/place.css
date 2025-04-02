@@ -2,7 +2,7 @@
   --color-blue: #012169;
   --color-white: #FFFFF2;
   --color-gray: #39373d;
-  --color-red: rgb(200, 17, 47)
+  --color-red: #c80f2d;
 }
 
 html {
@@ -77,35 +77,36 @@ a {
   color: var(--color-red);
 }
 
-.hero{
+.hero {
   background-image: url('/images/newZealand.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 85vh;
+  height: 80vh;
   position: relative;
-  z-index: 1;
-  background-attachment: fixed;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 2rem;
-  flex-wrap: wrap;
-  overflow: hidden;
-}
-.hero {
-  transition: all 0.3s ease;
+
 }
 
+
+main {
+  margin-top: 10rem;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .card {
   background-color: rgba(231, 220, 222, 0.7);
-  box-shadow: 0 0 2rem rgba(200, 17, 47, 0.3);
+  box-shadow: 0 0 2rem rgba(200, 17, 47, 0.302);
   padding: 2rem;
-  max-width: 400px;
-  position: relative;
+  max-width: 30%;
+  min-width: 300px;
 }
-
 
 .card-header {
   display: flex;
@@ -148,13 +149,20 @@ a {
   color: var(--color-gray);
 }
 
-.card-left{
-  align-self: flex-start;
+.card-left {
   margin-right: auto;
 }
 
-.card-right{
-  align-self: flex-end;
+.card-right {
   margin-left: auto;
-  margin-top: -10%;
+  height: 100%;
+  align-self:flex-end;
+  margin-bottom: -10%;
 }
+
+
+.icon path {
+  color: var(--color-white);
+}
+
+
