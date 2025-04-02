@@ -78,7 +78,7 @@ a {
 }
 
 .hero {
-  background-image: url('/images/newZealand.webp');
+  background-image: url('../images/newZealand.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
