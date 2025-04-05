@@ -109,12 +109,13 @@ function showTemples(temples) {
     const templeCard = document.createElement("div");
     templeCard.classList.add("temple-card");
     templeCard.innerHTML = `
-      <h3>${templeName}</h3>
+      <h2>${templeName}</h2>
       <p>Location: ${location}</p>
       <p>Dedicated: ${dedicated}</p>
       <p>Size: ${size} sq ft</p>
       <img src="${imageUrl}" alt="${templeName}">
     `;
+    
     container.appendChild(templeCard);
   });
 }
