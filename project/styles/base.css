@@ -1,0 +1,69 @@
+/* Base styles for the color palette */
+:root {
+  --mint-green: #cffcffff;
+  --tiffany-blue: #aaefdfff;
+  --thistle: #e8c4e2ff;
+  --ultra-violet: #474973ff;
+}
+
+.gradient-1 {
+  background: linear-gradient(135deg, var(--mint-green), var(--tiffany-blue));
+}
+
+.gradient-2 {
+  background: linear-gradient(135deg, var(--thistle), var(--mint-green));
+}
+
+.gradient-3 {
+  background: linear-gradient(135deg, var(--tiffany-blue), var(--ultra-violet));
+}
+
+.gradient-4 {
+  background: linear-gradient(135deg, var(--thistle), var(--mint-green), var(--tiffany-blue));
+}
+
+.gradient-5 {
+  background: linear-gradient(135deg, var(--ultra-violet), var(--thistle));
+}
+
+
+.coolors-palette {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.color{
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color p {
+  color: #e442bb;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s;
+}
+.color:hover p {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.color-1 {
+  background-color: var(--mint-green);
+}
+.color-2 {
+  background-color: var(--tiffany-blue);
+}
+.color-3 {
+  background-color: var(--thistle);
+}
+.color-4 {
+  background-color: var(--ultra-violet);
+}
