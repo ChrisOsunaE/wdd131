@@ -26,6 +26,13 @@
   background: linear-gradient(135deg, var(--ultra-violet), var(--thistle));
 }
 
+.pioret-one {
+  font-family: Poiret One, cursive;
+}
+
+.noto-sans {
+  font-family: 'Noto Sans', sans-serif;
+}
 
 .coolors-palette {
   display: flex;
@@ -87,6 +94,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.5;
+  background-color: var(--ultra-violet);
 }
 
 main {
@@ -96,8 +104,14 @@ main {
 footer {
   flex-shrink: 0;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding: 3rem 0;
+  background: linear-gradient(135deg, var(--mint-green), var(--tiffany-blue));
+}
+
+footer p {
+  color: var(--ultra-violet);
+  font-size: 1.4rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -109,18 +123,22 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 3.2rem;
+  color: var(--mint-green);
 }
 h2 {
   font-size: 2.4rem;
+  color: var(--tiffany-blue);
 }
 h3 {
   font-size: 2rem;
+  color: var(--thistle);
 }
 
 p, li {
   font-weight: 400;
   margin: 0 0 2rem 0;
   font-size: 1.6rem;
+  color: white;
 }
 
 li {
@@ -128,10 +146,21 @@ li {
   padding-left: 1rem;
 }
 
+a {
+  text-decoration: none;
+  color: var(--thistle);
+  cursor: pointer;;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: var(--mint-green);
+}
+
 .container {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 2rem;
+  margin-top: 3rem;
 }
 
 header {
@@ -139,6 +168,8 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(135deg, var(--mint-green), var(--tiffany-blue));
+
 }
 
 .header-text{
@@ -146,6 +177,39 @@ header {
   align-self: start;
   margin:  2rem 0;
   padding: 0 2rem;
+}
+
+header h1 {
+  font-size: 4rem;
+  color: var(--ultra-violet);
+}
+header p {
+  color: var(--ultra-violet);
+}
+
+.coolors{
+  background-color: rgb(165, 160, 160);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  max-width: 1000px;
+}
+
+.coolors h2 {
+  color: var(--ultra-violet);
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.typography {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  max-width: 1000px;
 }
 
 .wireframes {
@@ -172,7 +236,7 @@ header {
 
 .wireframe-container img {
   width: auto;
-  max-height: 400px;
+  max-height: 400px;;
 }
 
 .wireframe-container h3 {
