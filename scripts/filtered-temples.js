@@ -66,6 +66,30 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
   // Add more temple objects here...
+  {
+    templeName: "Laie Hawaii Temple",
+    location: "Laie, Hawaii United States",
+    dedicated: "1919, November, 27",
+    area: 42100,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/laie-hawaii-temple/laie-hawaii-temple-7370-main.jpg"
+  },
+  {
+    templeName: "Tijuana Mexico Temple",
+    location: "Tijuana, Baja California México",
+    dedicated: "2015, December, 13",
+    area: 33367,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/tijuana-mexico-temple/tijuana-mexico-temple-14590-main.jpg"
+  },
+  {
+    templeName: "Sapporo Japan Temple",
+    location: "Sapporo, Hokkaido, Japan",
+    dedicated: "2016, August, 21",
+    area: 48480,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/sapporo-japan-temple/sapporo-japan-temple-3374-main.jpg"
+  },
 ];
 
 console.log(temples);
@@ -115,7 +139,7 @@ function showTemples(temples) {
       <p>Size: ${size} sq ft</p>
       <img src="${imageUrl}" alt="${templeName}">
     `;
-    
+
     container.appendChild(templeCard);
   });
 }
