@@ -272,3 +272,55 @@ input[type="submit"]:disabled:focus{
     font-size: 1.2rem;
   }
 }
+
+.confirmation{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.confirmation h2{
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: white;
+}
+
+.confirmation button{
+  padding: 1rem;
+  border: none;
+  background-color: var(--color-enfasis);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.confirmation button:hover{
+  background-color: var(--color-blue);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.confirmation button:active{
+  background-color: var(--color-blue-light);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.confirmation button:disabled{
+  background-color: var(--color-gray);
+  cursor: not-allowed;
+}
+.confirmation button:disabled:hover{
+  box-shadow: none;
+}
+.confirmation button:disabled:active{
+  box-shadow: none;
+}
+
+#count {
+  color: yellow;
+  font-size: 1.2em;
+  margin-left: 5px;
+}
