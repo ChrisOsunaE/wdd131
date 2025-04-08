@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+      name="description"
+      content="WDD 131 - Product Review page by Christopher Osuna. This page is part of the WDD 131 course, focusing on web development fundamentals. The page includes a product review form."
+    >
+    <meta
+      name="keywords"
+      content="WDD 131, Product Review, Christopher Osuna"
+    >
+    <meta name="author" content="Christopher Osuna">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+  <title>Product Review</title>
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+    
+  </header>
+  <main>
+    <form method="get" action="review.html">
+      <div class="product_name">
+        <label for="product_name">Product name</label>
+        <select name="product_name" id="product_name" required>
+          <option value="" disabled selected>Chosse a product...</option>
+        </select>
+      </div>
+
+      <div >
+        <fieldset class="overall_rating">
+          <legend>Overall Rating</legend>
+
+          <div class="rating">
+            <label for="rating1">⭐</label>
+            <input type="radio" name="rating" id="rating1" value="1" required>
+          </div>
+
+          <div class="rating">
+            <label for="rating2">⭐⭐</label>
+            <input type="radio" name="rating" id="rating2" value="2">
+          </div>
+
+          <div class="rating">
+            <label for="rating3">⭐⭐⭐</label>
+            <input type="radio" name="rating" id="rating3" value="3">
+          </div>
+
+          <div class="rating">
+            <label for="rating4">⭐⭐⭐⭐</label>
+            <input type="radio" name="rating" id="rating4" value="4">
+          </div>
+
+          <div class="rating">
+            <label for="rating5">⭐⭐⭐⭐⭐</label>
+            <input type="radio" name="rating" id="rating5" value="5">
+          </div>
+        </fieldset>
+      </div>
+      
+      <div class="install_date">
+        <label for="install_date">Date of installation</label>
+        <input type="date" name="install_date" id="install_date" required>
+      </div>
+
+      <div class="features">
+        <fieldset>
+          <legend>Which features did you find useful in the product? <em>(Check all that apply)</em></legend>
+          
+          <input type="checkbox" name="feature1" id="feature1" value="Durability">
+          <label for="feature1">Durability</label><br>
+          
+          <input type="checkbox" name="feature2" id="feature2" value="Ease of use">
+          <label for="feature2">Ease of use</label><br>
+          
+          <input type="checkbox" name="feature3" id="feature3" value="Performance">
+          <label for="feature3">Performance</label><br>
+          
+          <input type="checkbox" name="feature4" id="feature4" value="Design">
+          <label for="feature4">Design</label>
+        </fieldset>
+      </div>
+
+      <div class="comments">
+        <label for="comments">Written review <em>(Optional)</em></label>
+        <textarea name="comments" id="comments" rows="4"></textarea>
+      </div>
+
+      <div class="user_name">
+        <label for="user_name">Your name <em>(Optional)</em></label>
+        <input type="text" name="user_name" id="user_name">
+      </div>
+
+      <input type="submit" value="Post Review">
+    </form>
+  </main>
+  <footer>
+    <p>&copy;<span id="currentyear"></span> 🤖 Christopher Osuna, 🇲🇽 México</p>
+    <p>Last modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
