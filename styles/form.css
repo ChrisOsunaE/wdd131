@@ -205,3 +205,70 @@ input[type="submit"]:disabled:active{
 input[type="submit"]:disabled:focus{
   box-shadow: none;
 }
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 1.4rem;
+    max-width: 100%; 
+    padding: 0 1rem; 
+  }
+
+  form {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .product_name select {
+    font-size: 1.4rem;
+    padding: 0.8rem 0.5rem;
+  }
+
+  .overall_rating {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .rating {
+    min-width: 20%;
+    margin-bottom: 0.5rem;
+  }
+
+  .features {
+    gap: 0.5rem;
+  }
+
+  .features input[type="checkbox"] {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 0.5rem;
+  }
+
+  .features label {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .install_date input[type="date"],
+  .user_name input[type="text"],
+  .comments textarea {
+    font-size: 1.4rem;
+    padding: 0.8rem;
+    width: 100%; 
+  }
+
+  .comments textarea {
+    min-height: 10rem;
+  }
+
+  input[type="submit"] {
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    width: 100%;
+  }
+
+  footer {
+    padding: 2rem 1rem;
+    font-size: 1.2rem;
+  }
+}
