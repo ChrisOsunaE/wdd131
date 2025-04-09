@@ -243,3 +243,52 @@ header .logo {
   color: var(--color-pink);
   margin-bottom: 1rem;
 }
+
+/* darkmode toggle */
+.dark-mode-toggle {
+  display: none; 
+}
+
+.dark-mode-label {
+  width: 5rem;
+  height: 2rem;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 200px;
+  box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.4), 
+              inset 0 -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dark-mode-label::after {
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 0;
+  left: 1px;
+  background: linear-gradient(135deg, var(--color-green), var(--ultra-violet));
+  border-radius: 180px;
+  box-shadow: inset 0 -5px 15px rgba(0, 0, 0, 0.4), 
+              inset 0 5px 15px rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.dark-mode-toggle:checked + .dark-mode-label {
+  background: var(--dark-pink);
+}
+
+.dark-mode-toggle:checked + .dark-mode-label::after {
+  left: calc(100% - 1px);
+  transform: translateX(-100%);
+}
+
+.dark-mode-label:active::after {
+  width: 3rem;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
