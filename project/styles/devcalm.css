@@ -173,8 +173,13 @@ header .logo {
   padding: 5rem;
 }
 .hero-content h1 {
-  color: var(--mint-green);
-  font-size: 4rem;
+  background: linear-gradient(90deg, var(--color-blue), rgb(0, 225, 255) );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: rgba(0, 0, 0, 0.9) 1px 0px 1px;
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
 }
 .hero-content p {
   color: var(--thistle);
@@ -291,4 +296,101 @@ header .logo {
 
 .visually-hidden {
   visibility: hidden;
+}
+
+/* timer */
+.timer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--color-green), var(--color-blue));
+  border-radius: 10px;
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.circle {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: none;
+
+}
+
+.circle.pulse{
+  animation: pulse 4s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    width: 0;
+    height: 0;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+  50% {
+    width: 60rem;
+    height: 60rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    width: 0;
+    height: 0;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+}
+
+.timer p {
+  margin: 1rem 0;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  background: var(--color-pink); 
+  border-radius: 10%;
+  width: 30rem; 
+  height: 30rem;
+  overflow: hidden; 
+  position: relative; 
+}
+.circle-container .circle {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timer-buttons button {
+  background: var(--color-green);
+  color: var(--color-white);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.timer-controls{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 2rem;
 }

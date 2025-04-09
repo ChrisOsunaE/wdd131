@@ -14,6 +14,7 @@
     href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles/devcalm.css">
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
   <script src="scripts/get-dates.js" defer></script>
   <script src="scripts/timer.js" defer></script>
   <title>WebCalm</title>
@@ -26,31 +27,45 @@
       <img class="header-logo" src="images/logo.png" alt="DevCalm logo" class="logo" width="200" height="auto">
       <nav class="nav">
         <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="devcalm.html">DevCalm</a></li>
           <li><a href="timer.html">Timer</a></li>
           <li><a href="resources.html">Resources</a></li>
-          <li><a href="devcalm.html">DevCalm</a></li>
+          <li>
+            <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
+            <label for="dark-mode-toggle" class="dark-mode-label">
+              <span class="visually-hidden">Dark mode</span>
+            </label>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="timer">
+    <section class="timer container">
       <h1>Timer</h1>
+      <div class="circle-container">
+      <div class="circle"></div>
+      </div>
       <div class="timer-container">
         <div class="timer-display">
           <span id="timerDisplay">00</span>:<span id="seconds">00</span>
         </div>
-        <button id="startButton" class="button">Start</button>
-        <button id="stopButton" class="button">Stop</button>
-        <button id="resetButton" class="button">Reset</button>
+        <div class="timer-buttons">
+          <button id="startButton" class="button">Start</button>
+          <button id="stopButton" class="button">Stop</button>
+          <button id="resetButton" class="button">Reset</button>
+        </div>
       </div>
       <div class="timer-controls">
-        <label for="workDuration">Work Duration (minutes):</label>
-        <input type="number" id="workDuration" value="25" min="1" max="60">
-        <label for="breakDuration">Break Duration (minutes):</label>
-        <input type="number" id="breakDuration" value="5" min="1" max="60">
+        <div>
+          <label for="workDuration">Work Duration (minutes):</label>
+          <input type="number" id="workDuration" value="25" min="1" max="60">
+        </div>
+        <div>
+          <label for="breakDuration">Break Duration (minutes):</label>
+          <input type="number" id="breakDuration" value="5" min="1" max="60">
+        </div>
     </section>
 
   </main>
