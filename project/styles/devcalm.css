@@ -9,10 +9,6 @@
   --color-white: #e7e7e7;
 }
 
-
-
-
-
 .pioret-one {
   font-family: Poiret One, cursive;
 }
@@ -175,6 +171,7 @@ header .logo {
 .hero-content h1 {
   background: linear-gradient(90deg, var(--color-blue), rgb(0, 225, 255) );
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: rgba(0, 0, 0, 0.9) 1px 0px 1px;
   font-size: 5rem;
