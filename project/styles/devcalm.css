@@ -1,27 +1,15 @@
 /* Base styles for the color palette */
 :root {
-  --mint-green: #cffcffff;
-  --tiffany-blue: #aaefdfff;
-  --thistle: #e8c4e2ff;
+  --color-green: #8dc2a3;
+  --color-pink: #f1e5f3;
+  --color-blue: #3184a3;
   --ultra-violet: #474973ff;
   --dark-pink: rgb(182, 87, 201);
+  --color-black: #3a3b3a;
+  --color-white: #e7e7e7;
 }
 
-.gradient-1 {
-  background: linear-gradient(135deg, var(--mint-green), var(--tiffany-blue));
-}
 
-.gradient-2 {
-  background: linear-gradient(135deg, var(--thistle), var(--mint-green));
-}
-
-.gradient-3 {
-  background: linear-gradient(135deg, var(--tiffany-blue), var(--ultra-violet));
-}
-
-.gradient-4 {
-  background: linear-gradient(135deg, var(--thistle), var(--mint-green), var(--tiffany-blue));
-}
 
 
 
@@ -52,7 +40,6 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.5;
-  background-color: var(--ultra-violet);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -67,7 +54,7 @@ footer {
   text-align: center;
   margin-top: 3rem;
   padding: 3rem 0;
-  background: linear-gradient(135deg, var(--mint-green), var(--tiffany-blue));
+  /* background: linear-gradient(135deg, var(--color-green), var(--ultra-violet)); */
 }
 
 footer p {
@@ -160,3 +147,99 @@ header .logo {
   transition: all 0.3s ease;
 }
 
+/* hero */
+.hero {
+  background-image: url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.hero-content {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  filter: brightness(1);
+  font-size: 2.5rem;
+  padding: 5rem;
+}
+.hero-content h1 {
+  color: var(--mint-green);
+  font-size: 4rem;
+}
+.hero-content p {
+  color: var(--thistle);
+  font-size: 2rem;
+}
+
+.hero-content a {
+  background-color: var(--color-green);
+  color: var(--ultra-violet);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  width: fit-content; 
+}
+.hero-content a:hover {
+  background-color: var(--dark-pink);
+  color: var(--color-white);
+  transition: all 0.3s ease;
+}
+.hero-content .hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+.hero-content .hero-image:hover {
+  filter: brightness(0.8);
+  transition: all 0.3s ease;
+}
+
+/* stats */
+#cards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+}
+.card {
+  background-color: var(--color-blue);
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 1rem;
+  width: calc(33.333% - 2rem);
+}
+.card:hover {
+  color: var(--ultra-violet);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+.card h3 {
+  color: var(--color-pink);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.card p {
+  color: var(--color-white);
+  font-size: 1.6rem;
+}
+.iconify {
+  font-size: 4rem;
+  color: var(--color-pink);
+  margin-bottom: 1rem;
+}
