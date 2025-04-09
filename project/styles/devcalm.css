@@ -1,0 +1,159 @@
+/* Base styles for the color palette */
+:root {
+  --mint-green: #cffcffff;
+  --tiffany-blue: #aaefdfff;
+  --thistle: #e8c4e2ff;
+  --ultra-violet: #474973ff;
+  --dark-pink: rgb(182, 87, 201);
+}
+
+.gradient-1 {
+  background: linear-gradient(135deg, var(--mint-green), var(--tiffany-blue));
+}
+
+.gradient-2 {
+  background: linear-gradient(135deg, var(--thistle), var(--mint-green));
+}
+
+.gradient-3 {
+  background: linear-gradient(135deg, var(--tiffany-blue), var(--ultra-violet));
+}
+
+.gradient-4 {
+  background: linear-gradient(135deg, var(--thistle), var(--mint-green), var(--tiffany-blue));
+}
+
+
+
+.pioret-one {
+  font-family: Poiret One, cursive;
+}
+
+.noto-sans {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* Standar */
+html {
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'noto sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: var(--ultra-violet);
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  flex-shrink: 0;
+  text-align: center;
+  margin-top: 3rem;
+  padding: 3rem 0;
+  background: linear-gradient(135deg, var(--mint-green), var(--tiffany-blue));
+}
+
+footer p {
+  color: var(--ultra-violet);
+  font-size: 1.4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Poiret One, cursive;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0 0 2rem 0;
+}
+
+h1 {
+  font-size: 3.2rem;
+  color: var(--mint-green);
+}
+h2 {
+  font-size: 2.4rem;
+  color: var(--tiffany-blue);
+}
+h3 {
+  font-size: 2rem;
+  color: var(--thistle);
+}
+
+p, li {
+  font-weight: 400;
+  margin: 0 0 2rem 0;
+  font-size: 1.6rem;
+  color: white;
+}
+
+li {
+  margin-left: 2rem;
+  padding-left: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--thistle);
+  cursor: pointer;;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: var(--mint-green);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  margin-top: 3rem;
+}
+
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+header .logo {
+  color: var(--mint-green);
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list li {
+  margin: 0 2rem;
+}
+.nav-list a {
+  display: inline-block;
+  color: var(--ultra-violet);
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+}
+.nav-list a:hover {
+  color: var(--dark-pink);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
