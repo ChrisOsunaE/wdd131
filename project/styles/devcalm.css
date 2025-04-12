@@ -7,6 +7,8 @@
   --dark-pink: rgb(182, 87, 201);
   --color-black: #3a3b3a;
   --color-white: #e7e7e7;
+  --header-bg: linear-gradient(135deg, #f1e5f3, #e7e7e7);
+  --border-color: 1px solid rgba(71, 73, 115, 0.1)
 }
 
 :root.dark-mode {
@@ -16,6 +18,7 @@
   --card-bg: #2a2a2a;
   --footer-text: var(--color-pink);
   --ultra-violet: var(--color-white);
+  --border-color: 1px solid rgba(255, 255, 255, 0.1)
 }
 
 body {
@@ -576,4 +579,70 @@ body, .card, header, footer{
   margin-top: 2rem;
   font-weight: 600;
   display:none;
+}
+
+/* footer */
+
+.site-footer {
+  background: var(--header-bg);
+  color: var(--color-white);
+  padding: 2rem 0 0;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: flex-end; 
+  margin-bottom: 1.5rem;
+}
+
+.footer-links-right {
+  text-align: right;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin-left: 2rem;
+  margin-bottom: 0;
+}
+
+.footer-links a {
+  color: var(--ultra-violet);
+  transition: color 0.3s ease;
+  font-size: 1.4rem;
+}
+
+.footer-links a:hover {
+  color: var(--color-green);
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 1.5rem 0;
+  border-top: var(--border-color);
+}
+
+.footer-bottom p {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: var(--ultra-violet);
+}
+
+.attributions-section li{
+  color: var(--ultra-violet);
+}
+.attributions-section li a{
+  color: var(--color-green);
+}
+.attributions-section li a:hover{
+  color: var(--dark-pink);
+  text-decoration: underline;
 }

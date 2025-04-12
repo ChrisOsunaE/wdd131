@@ -139,3 +139,24 @@
     margin-bottom: 0;
   }
 }
+
+/* Footer */
+@media (max-width: 768px) {
+  .footer-content {
+    justify-content: center;
+  }
+  
+  .footer-links-right {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .footer-links li {
+    display: block;
+    margin: 0 0 1rem 0;
+  }
+  
+  .footer-links a {
+    font-size: 1.6rem;
+  }
+}
