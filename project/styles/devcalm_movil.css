@@ -1,0 +1,141 @@
+@media (max-width: 768px) {
+  
+  html {
+    font-size: 55%;
+  }
+  
+  .container {
+    padding: 0 1.5rem;
+    margin-top: 2rem;
+  }
+
+  /* Header  */
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .header-logo {
+    width: 160px;
+    margin-bottom: 1rem;
+  }
+  
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-list li {
+    margin: 0.5rem 1rem;
+  }
+
+  /* Hero  */
+  .hero {
+    height: 50vh;
+    align-items: center;
+  }
+  
+  .hero-content {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.6rem;
+  }
+  
+  .hero-content a {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /* Cards */
+  #cards-container {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  
+  .card {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  /* Galery */
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  /* Timer */
+  .circle-container {
+    width: 25rem;
+    height: 25rem;
+  }
+  
+  @keyframes pulse {
+    50% {
+      width: 35rem;
+      height: 35rem;
+    }
+  }
+  
+  .timer-controls {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  /* Form */
+  .contact-form {
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .contact-form h2 {
+    font-size: 2.2rem;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 0.8rem;
+  }
+
+  /* Footer móvil */
+  footer {
+    padding: 1.5rem;
+  }
+  
+  footer p {
+    font-size: 1.2rem;
+  }
+}
+
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero {
+    height: 70vh;
+  }
+  
+  .hero-content {
+    padding: 1.5rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.4rem;
+  }
+  
+  .header {
+    flex-direction: row;
+    padding: 0.5rem;
+  }
+  
+  .header-logo {
+    width: 120px;
+    margin-bottom: 0;
+  }
+}

@@ -14,6 +14,7 @@
     href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles/devcalm.css">
+  <link rel="stylesheet" href="styles/devcalm_movil.css">
   <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
   <script src="scripts/script.js" defer></script>
   <script src="scripts/resources.js" defer></script>
@@ -45,6 +46,44 @@
     <section class="resources container">
       <h1>Resources</h1>
       <div class="resources-list" id="mental-health-resources">
+      </div>
+    </section>
+
+    <section class="contact-form container">
+      <h2>Contact Us for More Info</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="interest">Interest:</label>
+          <select id="interest" name="interest">
+            <option value="general">General Information</option>
+            <option value="timer">Timer Features</option>
+            <option value="resources">More Resources</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <button type="submit" class="cta-button">Send Message</button>
+        </div>
+      </form>
+      
+      <div id="formSuccess" class="success-message">
+        Thank you! We've received your message and will contact you soon.
       </div>
     </section>
 

@@ -131,7 +131,7 @@ a:hover {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 2rem;
-  margin-top: 3rem;
+  margin: 5rem 0;
 }
 
 
@@ -503,4 +503,77 @@ body, .card, header, footer{
   -o-transition: background-color 0.3s ease, color 0.3s ease;
   -ms-transition: background-color 0.3s ease, color 0.3s ease; 
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* form contact */
+
+.contact-form {
+  margin-top: 4rem;
+  padding: 3rem;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  color: var(--color-green);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--ultra-violet);
+  border-radius: 5px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.cta-button {
+  background-color: var(--color-green);
+  color: var(--ultra-violet);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.cta-button:hover {
+  background-color: var(--dark-pink);
+  color: var(--color-white);
+}
+
+.success-message {
+  background-color: var(--color-green);
+  color: var(--ultra-violet);
+  padding: 2rem;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 600;
+  display:none;
 }

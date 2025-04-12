@@ -112,3 +112,47 @@ mentalHealthResources.informativeWebsites.forEach(resource => {
   `;
   informativeWebsitesContainer.appendChild(card);
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const contactForm = document.getElementById('contactForm');
+  const formSuccess = document.getElementById('formSuccess');
+  
+  if (contactForm) {
+    // Cargar datos guardados si existen
+    const savedFormData = localStorage.getItem('contactFormData');
+    if (savedFormData) {
+      const formData = JSON.parse(savedFormData);
+      document.getElementById('name').value = formData.name || '';
+      document.getElementById('email').value = formData.email || '';
+      document.getElementById('interest').value = formData.interest || 'general';
+      document.getElementById('message').value = formData.message || '';
+    }
+    
+    contactForm.addEventListener('input', function() {
+      const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        interest: document.getElementById('interest').value,
+        message: document.getElementById('message').value
+      };
+      localStorage.setItem('contactFormData', JSON.stringify(formData));
+    });
+    
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      
+      formSuccess.style.display = 'block';
+      contactForm.style.display = 'none';
+      
+      
+      contactForm.reset();
+      
+      setTimeout(() => {
+        formSuccess.style.display = 'none';
+        contactForm.style.display = 'block';
+      }, 5000);
+    });
+  }
+});
